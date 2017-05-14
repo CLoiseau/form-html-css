@@ -1,0 +1,201 @@
+@font-face{
+	font-family: ma-police;
+	src: url('font/OpenSans-Regular-webfont.eot');
+	src: url('font/OpenSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('font/OpenSans-Regular-webfont.woff') format('woff'),
+	     url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+	     url('font/OpenSans-Regular-webfont.svg#webfont') format('svg');
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p{
+  font-family: ma-police;
+}
+
+h1,h2,h3{
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+    )
+}
+
+h2,h3:before{
+  content: "- "
+}
+
+.bordure
+{
+  border:solid 5px;
+   border-radius: 10px;
+   background-color: white;
+   padding:1rem;
+   box-shadow: 6px 6px 6px black;
+   text-shadow: 6px 6px 4px black;
+   width: 400px;
+   margin: 0 auto;
+}
+
+a:hover
+{
+  font-size: 1.5em;
+  color: blue;
+  transition: 1s;
+}
+
+.container{
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+.box{
+  background: orange;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.container1{
+	justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.container2{
+	align-items: flex-end;
+
+}
+
+.container3{
+    flex-wrap: wrap;
+}
+
+.container4{
+    flex-wrap: wrap;
+}
+
+.container4 > *{
+    flex: 1;
+    min-width: 1 0 480px;
+}
+
+.box3{
+    flex: 0 0 calc(50% - 2rem);
+    /*max-width: 50%;*/
+    margin: 1rem;
+}
+
+
+.box1{
+	flex: 1 0;
+	width: calc(240px - 1rem);
+	margin: 1rem 0.5rem;
+}
+
+.box2{
+	flex:1 0;
+	margin: 1rem 0.5rem;
+}
+
+
+.test{
+	align-self: flex-start;
+}
+
+.couleur{
+	width: 30%;
+	height: auto;
+	float: right;
+}
+
+.parent{
+	position: absolute;
+	left:100px;
+	top:100px;
+	background: red;
+	width: 200px;
+	height: 200px;
+	z-index: -2;
+}
+
+.enfant{
+	/*position: absolute;
+	left:0px;
+	top:0px;*/
+	background: green;
+	width: 100px;
+	height: 100px;
+
+}
+
+.petitnenfant{
+	position: absolute;
+	top: calc(50% - 25px);
+	right: calc(50% - 25px);
+	background: blue;
+	width: 50px;
+	height: 50px;
+	z-index: -1;
+}
+
+.test-relatif span{
+	position: relative;
+	bottom: 20px;
+	color: red;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid purple;
+	padding: 0.5em;
+}
+
+form{
+width: 50%;
+margin: 0 auto;
+position: relative;
+padding-bottom: 4em;
+}
+
+.form-group{
+	display: flex;
+	padding: 0.5rem;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+label{
+	flex: 1;
+	min-width: 75px;
+	margin-bottom: 0.5rem;
+}
+
+input , textarea{
+	flex: 2 0;
+	padding: 0.2rem;
+	font-size: 1.1rem;
+}
+
+button{
+	padding: 0.5rem;
+	border-radius: 4px;
+	background-color: pink;
+	color: white;
+	border: 0;
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
+button:hover{
+	transition:1s;
+	background-color: orange;
+}
